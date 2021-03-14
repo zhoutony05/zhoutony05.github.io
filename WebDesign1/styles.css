@@ -1,0 +1,220 @@
+body {
+    background-color: gray;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 0px;
+    margin: 0px;
+}
+
+.aboutme{
+    background-image: url("background.jpg");
+    padding: 30px;
+    height: 400px;
+    background-size: 100%;
+    background-position: center;
+
+    /* Padding is space in between element and its container*/
+}
+
+.index{
+    background-image: url("coffee.jpg");
+    padding: 30px;
+    height: 400px;
+    background-size: 100%;
+    background-position: center;
+
+    /* Padding is space in between element and its container*/
+}
+
+header{
+    background-image: url("coffee.jpg");
+    padding: 30px;
+    height: 400px;
+    background-size: 100%;
+    background-position: center;
+
+    /* Padding is space in between element and its container*/
+}
+
+ul{
+    list-style-type: none;
+    /* Get rid of bullet points */
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+    background-color: #333;
+    overflow: hidden;
+    /* Prevents navbar from overflowing onto header*/
+}
+
+li{
+    float: left;
+    /* float determines float direction*/
+}
+
+li a{
+    display: block;
+    color: white;
+    text-align:center;
+    padding: 14px 16px;
+    text-decoration: none;
+    /* Gets rid of the underline*/
+
+}
+li a:hover {
+    background-color: #111;
+}
+
+section{
+    background: white;
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    /* Display Flex */
+
+    flex-wrap: wrap;
+}
+div {
+    width: 200px;
+    margin: auto;
+    
+    /* Spaces divs out evenly */
+}
+.img1 {
+    width: 200px;
+    border-radius: 50%;
+}
+
+footer{
+    background-color: red;
+    padding: 30px;
+}
+
+.container{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    padding-top: 56.25%;
+}
+
+iframe{
+    position: absolute;
+    top:0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height:100%;
+}
+
+button{
+    background-color: lightblue;
+    color: black;
+    /*transition-duration: 0.5s;*/
+    padding: 10px 16px;
+    animation-name: changeColor;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+
+.test{
+    padding: 20px;
+    background-color: aqua;
+    animation-name: changeLocation;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+#container{
+    width: 300px;
+    height: 300px;
+    position: relative;
+    background: skyblue;
+}
+
+#animate{
+    position: absolute;
+    width:50px;
+    height: 50px;
+    background-color: yellow;
+}
+
+
+
+/*button:hover {
+    background-color: white;
+    color: lightblue;
+}
+*/
+
+@keyframes changeColor{
+
+    0%{background-color: lightblue;}
+    50%{background-color: green;}
+    100%{background-color: red;}
+
+}
+
+@keyframes changeLocation {
+    0%{
+        transform: translateX(20px);
+    }
+    50%{
+        transform: translateX(-20px);
+    }
+    100%{
+        transform: translateX(20px);
+    }
+}
+
+@media screen and (max-width: 850px){
+    .index {
+        height: 300px;
+    }
+
+    .aboutme{
+        height: 300px;
+    }
+
+    header{
+        height: 300px;
+    }
+
+
+}
+
+@media screen and (max-width: 650px){
+    .index {
+        height: 200px;
+    }
+
+    .aboutme{
+        height: 200px;
+    }
+
+    header{
+        height: 200px;
+    }
+
+}
+
+@media screen and (max-width: 450px){
+    .index {
+        height: 150px;
+    }
+
+    .aboutme{
+        height: 150px;
+    }
+
+    header{
+        height: 150px;
+    }
+}
+
